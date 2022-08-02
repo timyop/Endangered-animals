@@ -14,10 +14,10 @@ $allResults = $query->fetchAll();
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css' href="normalize.css">
-    <link rel="stylesheet" type="text/css' href="style.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <h1>ENDANGERED ANIMAL LIST</h1>
