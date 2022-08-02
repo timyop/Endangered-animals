@@ -14,7 +14,7 @@ function dbpull():array{
 }
 $animals = dbpull();
 
-function displayAnimals(array $animals) {
+function displayAnimals(array $animals):string {
     $animalsHTML = '';
      foreach ($animals as $animal){
          $animalsHTML .=
