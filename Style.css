@@ -50,3 +50,7 @@ li {
     border: 3px solid black;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
