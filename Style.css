@@ -7,7 +7,7 @@ html {
 
 body {
     position: center;
-   width: 100vw;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -22,7 +22,7 @@ ul {
     align-content: center;
     text-align: center;
     margin-left: 0;
-    width: 100vw;
+    width: 100%;
     list-style: none;
     padding-left: 0;
 
