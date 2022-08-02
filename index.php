@@ -25,9 +25,12 @@ $allResults = $query->fetchAll();
     <ul>
         <?php $animals = $allResults;
         foreach($animals as $animal) { ?>
-            <li class = "species"><?php echo $animal['species']; ?></li>
-            <li class = "facts"><?php echo $animal['population']; ?></li>
-            <li class = "facts"><?php echo $animal['country']; ?></li>
+            <div class = "animal">
+                <li class = "species">Species: <?php echo $animal['species']; ?></li>
+                <li class = "facts">Individuals remaining: <?php echo $animal['population']; ?></li>
+                <li class = "facts">Habitat: <?php echo $animal['country']; ?></li>
+                <li class = "facts">Charity: <?php echo  $animal['charity']; ?></li>
+            </div>
         <?php } ?>
     </ul>
     </div>

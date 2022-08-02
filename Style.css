@@ -33,10 +33,20 @@ li {
 }
 
 .species {
-    background-color: coral;
-    text-decoration: underline;
+    background-color: #39CCCC;
+    font-weight: bolder;
+    font-size: 3rem;
+    color: #111111;
 }
 
 .facts {
-    background-color: aqua;
+    background-color: #85144b;
+    color: #FF851B;
+    font-size: 1.4rem;
+
 }
+
+.animal {
+    border: 3px solid black;
+}
+
