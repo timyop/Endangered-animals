@@ -1,0 +1,56 @@
+
+html {
+
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: center;
+   width: 100vw;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    margin-left: 0;
+    width: 100vw;
+    list-style: none;
+    padding-left: 0;
+
+}
+
+li {
+    padding: 10px;
+}
+
+.species {
+    background-color: #39CCCC;
+    font-weight: bolder;
+    font-size: 3rem;
+    color: #111111;
+}
+
+.facts {
+    background-color: #85144b;
+    color: #FF851B;
+    font-size: 1.4rem;
+
+}
+
+.animal {
+    border: 3px solid black;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
