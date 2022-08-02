@@ -1,8 +1,42 @@
+
+html {
+
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: center;
+   width: 100vw;
+    margin: 0 auto;
+}
+
 h1 {
     text-align: center;
+    padding-top: 10px;
 }
 
 ul {
-    position: center;
-    padding-left: 700px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    margin-left: 0;
+    width: 100vw;
+    list-style: none;
+    padding-left: 0;
+
+}
+
+li {
+    padding: 10px;
+}
+
+.species {
+    background-color: coral;
+    text-decoration: underline;
+}
+
+.facts {
+    background-color: aqua;
 }
