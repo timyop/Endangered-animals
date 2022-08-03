@@ -17,6 +17,16 @@ $animals = dbpull();
 function displayAnimals(array $animals):string {
     $animalsHTML = '';
      foreach ($animals as $animal){
+
+         if(!is_array($animal) ||
+         !array_key_exists('species', $animal) ||
+         !array_key_exists('population', $animal) ||
+         !array_key_exists('country', $animal) ||
+         !array_key_exists('charity', $animal))
+         {
+             return '';
+         }
+
          $animalsHTML .=
              '<div class = animal>' .
                 '<li class = species>Species: ' . $animal['species'] . '</li>'.
