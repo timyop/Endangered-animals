@@ -34,6 +34,3 @@ function displayAnimals(array $animals): string {
     }
     return $animalsHTML;
 }
-
-
-
