@@ -1,5 +1,6 @@
 <?php
-function dbpull():array{
+function pullAllAnimalsFromDb(): array
+{
     $connectionString = 'mysql:host=db; dbname=endangeredlist';
     $dbUsername = 'root';
     $dbPassword = 'password';
@@ -9,33 +10,29 @@ function dbpull():array{
     $queryString = 'SELECT * FROM `animals`;';
     $query = $db->prepare($queryString);
     $query->execute();
-    $allresults = $query->fetchAll();
-    return $allresults;
+    $allResults = $query->fetchAll();
+    return $allResults;
 }
-$animals = dbpull();
 
-function displayAnimals(array $animals):string {
+function displayAnimals(array $animals): string {
     $animalsHTML = '';
-     foreach ($animals as $animal){
+    foreach ($animals as $animal) {
 
-         if(!is_array($animal) ||
-         !array_key_exists('species', $animal) ||
-         !array_key_exists('population', $animal) ||
-         !array_key_exists('country', $animal) ||
-         !array_key_exists('charity', $animal))
-         {
-             return '';
-         }
+        if (!is_array($animal) ||
+            !array_key_exists('species', $animal) ||
+            !array_key_exists('population', $animal) ||
+            !array_key_exists('country', $animal) ||
+            !array_key_exists('charity', $animal)) {
+            return '';
+        }
 
-         $animalsHTML .=
-             '<div class = animal>' .
-                '<li class = species>Species: ' . $animal['species'] . '</li>'.
-                '<li class = facts>Individuals remaining :' . $animal['population'] . '</li>' .
-                '<li class = facts>Habitat: ' . $animal['country'] . '</li>' .
-                '<li class = facts>Charity: <a href = "' . $animal['charity'] . '">Link</a></li>' .
-            '</div>';
-     }
-     return $animalsHTML;
+        $animalsHTML .=
+            '<h2 class = species>Species: ' . $animal['species'] . '</h2>' .
+            '<p class = facts>Individuals remaining: ' . $animal['population'] . '</p>' .
+            '<p class = facts>Habitat: ' . $animal['country'] . '</p>' .
+            '<p class = facts>Charity: <a href = "' . $animal['charity'] . '">Link</a></p>';
+    }
+    return $animalsHTML;
 }
 
 
