@@ -11,7 +11,6 @@ $animals = pullAllAnimalsFromDb();
 </head>
 <body>
     <h1>Endangered Animal List</h1>
-
     <div class="animal">
         <?php
             echo displayAnimals($animals);
