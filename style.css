@@ -23,7 +23,7 @@ h1 {
     width: 100%;
     list-style: none;
     padding-left: 0;
-    border: 3px solid black;
+    border: 3px solid #111111;
 }
 
 .species {
