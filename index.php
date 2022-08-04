@@ -1,5 +1,4 @@
-<?php require_once 'functions.php';  require_once 'form.php';
-echo  InsertToDb();
+<?php require_once 'functions.php';
 $animals = pullAllAnimalsFromDb();
 ?>
 
@@ -18,15 +17,13 @@ $animals = pullAllAnimalsFromDb();
             echo displayAnimals($animals);
         ?>
     </div>
-    <div>
-        <form method="post">
-            <input type="text" name="species" placeholder="Species" required />
-            <input type="text" name="population" placeholder="Individuals remaining" required />
-            <input type="text" name="country" placeholder="Country" required />
-            <input type="text" name="charity" placeholder="Charity" required />
-            <input type="submit" />
-        </form>
-    </div>
+    <form class="input_form" method="post" action="form.php">
+        <input type="text" name="species" placeholder="Species" required />
+        <input type="text" name="population" placeholder="Individuals remaining" required />
+        <input type="text" name="country" placeholder="Country" required />
+        <input type="text" name="charity" placeholder="Charity" required />
+        <input type="submit" />
+    </form>
 </body>
 
 </html>

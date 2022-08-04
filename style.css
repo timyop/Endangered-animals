@@ -33,11 +33,11 @@ h1 {
     color: #111111;
     margin: 0;
     padding-bottom: 5px;
-    border: 3px solid black;
+    border: 3px solid #111111;
 }
 
 .facts {
-    background-color: #85144b;
+    background-color: #85144B;
     color: #FF851B;
     font-size: 1.4rem;
     font-weight: bolder;
